@@ -14,6 +14,10 @@ var launched_count = 0;
     function onDeviceReady() {
 		alert("device ready");
         
+        var key = "pen";
+        var value = "blue";
+        window.localstorage.setItem (key, value);
+        
 		document.addEventListener("resume", onResume, false);
 		document.addEventListener("pause", onPause, false);
 		
